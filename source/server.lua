@@ -2,6 +2,7 @@ ESX = nil
 
 Config.UseESX then
 	TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+)
 
 
 RegisterNetEvent("ND_Fuel:pay", function(amount)

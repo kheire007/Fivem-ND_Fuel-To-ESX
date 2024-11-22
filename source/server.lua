@@ -1,9 +1,6 @@
 ESX = nil
 
-Config.UseESX then
-	TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-)
-
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterNetEvent("ND_Fuel:pay", function(amount)
     local src = source
@@ -16,3 +13,4 @@ RegisterNetEvent("ND_Fuel:pay", function(amount)
         type = "inform"
     })
 end)
+
